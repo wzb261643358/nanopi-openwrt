@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    if: github.repository == 'wzb261643358/nanopi-openwrt'
+    if: github.repository == 'w261643358/nanopi-openwrt'
 
     steps:
 
@@ -60,7 +60,7 @@ jobs:
 
       - name: Build FriendlyWrt
         run: . 4_build_image.sh friendlywrt-rk3328 nanopi_r2s.mk
-        
+          
       - name: Assemble Artifact
         id: assemble_artifact
         run: |
@@ -72,6 +72,4 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: FriendlyWrt_NanoPi-R2S
-          path: ./artifact/ 
-
-
+          path: ./artifact/   
