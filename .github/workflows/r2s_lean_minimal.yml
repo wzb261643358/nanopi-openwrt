@@ -12,8 +12,8 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
-    if: github.repository == 'wzb261643358/nanopi-openwrt'
+    runs-on: ubuntu-18.04
+     if: github.repository == 'wzb261643358/nanopi-openwrt'
 
     steps:
 
